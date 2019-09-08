@@ -1,0 +1,84 @@
+.btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: 175px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    background: $green;
+    color: white;
+    transition: .2s transform ease-in-out;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.btn__green {
+    position: relative;
+    &::after {
+        content: '';
+        background-color: $darkgreen;
+        width: 175px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 35px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, 0) rotate(7deg);
+        transform-origin: top left;
+        transition: 200ms transform ease-out;
+        z-index: -1;
+    }
+
+    &:hover::after {
+        transform: translate(0, 0);
+    }
+    &:hover {
+        color: white;
+    }
+}
+
+.btn__view {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn__view-green {
+    border: 1px solid $green;
+    color: $green;
+}
+
+.btn__view, .btn__view-green {
+    background-color: transparent;
+    position: relative;
+
+    &::after {
+        content: '';
+        background-color: $green;
+        width: 100%;
+        height: 100%;
+        line-height: 70px;
+        border-radius: 35px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, 0) rotate(7deg);
+        transform-origin: top left;
+        transition: 200ms transform ease-out;
+        z-index: -1;
+    }
+
+    &:hover::after {
+        transform: translate(0, 0);
+    }
+    &:hover {
+        color: white;
+        border: 1px solid transparent;
+//        transform: scale(1.05);
+    }
+
+}
+

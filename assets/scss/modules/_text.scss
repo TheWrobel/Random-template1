@@ -1,0 +1,44 @@
+.section__title {
+    padding: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    color: $darkblue;
+    line-height: 46px;
+    z-index: 10;
+}
+
+.section__text {
+    padding: 5px;
+    line-height: 32px;
+    font-size: 17px;
+    font-weight: 600;
+    color: $lightblue;
+    z-index: 10;
+
+}
+
+.f-header-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 42px;
+    z-index: 10;
+
+}
+
+.text--is-green {
+    color: $green;
+}
+
+.text--is-white {
+    color: white !important;
+}
+
+.text--is-big {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text--is-red {
+    color: red;
+}

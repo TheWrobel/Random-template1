@@ -1,0 +1,11 @@
+.bg--is-green {
+    background: $green !important;
+}
+
+.bg--is-gradient {
+    background: linear-gradient(to right bottom, $purple, $lightpurple) !important;
+}
+
+.bg--is-white {
+    background: white !important;
+}
